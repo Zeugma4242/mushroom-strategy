@@ -51,6 +51,8 @@ class AreaCard extends AbstractCard {
 
     // Initialize the default configuration.
     this.#defaultConfig.primary = area.name;
+    this.#defaultConfig.icon = area.icon ?? "mdi:toilet";
+    
     if (this.#defaultConfig.tap_action && ("navigation_path" in this.#defaultConfig.tap_action)) {
       this.#defaultConfig.tap_action.navigation_path = area.area_id;
     }
