@@ -6,6 +6,7 @@ on:
     # Ignore changes in folders that are affected by the auto commit. (Node.js project)
     paths-ignore:
       - 'dist/**'
+  workflow_dispatch:
   # pull_request:
   #  branches: [ "main" ]
 
