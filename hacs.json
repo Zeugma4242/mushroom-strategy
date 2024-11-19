@@ -1,6 +1,5 @@
 {
     "name": "Auto generating Mushroom dashboard strategy",
     "render_readme": true,
-    "filename": "mushroom-strategy.js",
-    "version": "2.2.43"
+    "filename": "mushroom-strategy.js"
 }
