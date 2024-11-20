@@ -10,6 +10,7 @@ export const configurationDefaults: StrategyDefaults = {
       aliases: [],
       area_id: "undisclosed",
       name: "Undisclosed",
+      icon: null,
       picture: null,
       hidden: false,
     }
