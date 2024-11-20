@@ -50,20 +50,13 @@ class AreaCard extends AbstractCard {
     }
 
     // Initialize the default configuration.
-    this.#defaultConfig.primary = area.name + "toto";
-    this.#defaultConfig.icon = area.icon ?? "mdi:toilet";
+    this.#defaultConfig.primary = area.name;
+    this.#defaultConfig.icon = area.icon ?? "mdi:texture-box";
     
     if (this.#defaultConfig.tap_action && ("navigation_path" in this.#defaultConfig.tap_action)) {
       this.#defaultConfig.tap_action.navigation_path = area.area_id;
     }
-
-    if (area.icon) {
-        this.#defaultConfig.icon = area.icon;
-    }
     
-    if (options.icon) {
-        delete options.icon;
-    }
     this.config = Object.assign(this.config, this.#defaultConfig, options);
   }
 }
